@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App .image {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  z-index: -1;
+}
+
+.App .form {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  z-index: 999;
+}
+
+.App .form .city-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App .form .city-form input {
+  height: 3vh;
+  min-height: 30px;
+  min-width: 200px;
+  width: 15vw;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #0000004f;
+          box-shadow: 0 0 5px #0000004f;
+}
+
+.App .form .city-form input[type="text"] {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  background-color: #444444;
+  color: #d5ff86;
+}
+
+.App .form .city-form input[type="text"]:focus {
+  background-color: #ffc400;
+}
+
+.App .form .city-form button {
+  height: 3vh;
+  width: 5vh;
+  min-height: 30px;
+  min-width: 50px;
+  margin-left: 5%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #0000004f;
+          box-shadow: 0 0 5px #0000004f;
+  background-color: #ffc400;
+}
+
+.App .weather {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 300px;
+  min-width: 270px;
+  height: 30vh;
+  width: 50vw;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.294);
+  -webkit-box-shadow: 0 0 20px #474747ce;
+          box-shadow: 0 0 20px #474747ce;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+  .App .weather {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .App .weather {
+    font-size: 0.5rem;
+    top: 52%;
+  }
+}
+
+.App .err {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  min-width: 280px;
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+  .App .err {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .App .err {
+    font-size: 14px;
+  }
+}
+
+.App .back {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+/*# sourceMappingURL=app.css.map */
