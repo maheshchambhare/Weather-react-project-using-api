@@ -1,4 +1,4 @@
-# required :-
+# Required :-
 ## Api-Key :- Unsplash
 ## Api-Key :- weather
 ## put your api key in the axios.get - url
