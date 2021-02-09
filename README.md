@@ -1,7 +1,7 @@
 # Required :-
 ## Api-Key :- Unsplash
 ## Api-Key :- weather
-## put your api key in the axios.get - url
+## put your api key's in the axios.get - url
 ##
 ##
 
